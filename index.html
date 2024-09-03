@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile and Details Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <!-- Left Section: Profile Details -->
+            <div class="left-box">
+                <!-- Back Navigation Arrow -->
+                <div class="back-arrow">
+                    <a href="#" onclick="window.history.back();">
+                        &#9664; Back
+                    </a>
+                </div>
+                <div class="profile-photo">
+                    <img src="profile-photo.jpg" alt="Profile Photo" class="circle-icon" id="profile-image">
+                </div>
+                <div class="profile-name">
+                    <h2>John Doe</h2> <!-- Example name, replace with dynamic content if needed -->
+                </div>
+                <hr class="profile-divider">
+                <div class="profile-details">
+                    <div class="input-group">
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" placeholder="Enter your location" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" class="input-field" disabled>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section: Details -->
+            <div class="right-box">
+                <div class="details-container">
+                    <!-- KYC Section -->
+                    <h2 class="section-heading">KYC</h2>
+                    <div class="input-group">
+                        <label for="panCard">PAN Number:</label>
+                        <input type="text" id="panCard" placeholder="Enter your PAN Number" class="input-field" readonly>
+                    </div>
+                    <hr>
+
+                    <!-- Bank Details Section -->
+                    <h2 class="section-heading">Bank Details</h2>
+                    <div class="input-group">
+                        <label for="bankName">Bank Name:</label>
+                        <input type="text" id="bankName" placeholder="Enter your Bank Name" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="accountNumber">Account Number:</label>
+                        <input type="text" id="accountNumber" placeholder="Enter your Account Number" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="ifscCode">IFSC Code:</label>
+                        <input type="text" id="ifscCode" placeholder="Enter your IFSC Code" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="branchType">Branch Type:</label>
+                        <input type="text" id="branchType" placeholder="Enter Branch Type" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="accountType">Account Type:</label>
+                        <select id="accountType" class="input-field" disabled>
+                            <option value="">Select Account Type</option>
+                            <option value="savings">Savings Account</option>
+                            <option value="current">Current Account</option>
+                        </select>
+                    </div>
+                    <hr>
+
+                    <!-- Organization Details Section -->
+                    <h2 class="section-heading">Organization Details</h2>
+                    <div class="input-group">
+                        <label for="designation">Designation:</label>
+                        <input type="text" id="designation" placeholder="Enter your Designation" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reportingTo">Reporting To:</label>
+                        <input type="text" id="reportingTo" placeholder="Enter Reporting To" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="hierarchy">Hierarchy:</label>
+                        <input type="text" id="hierarchy" placeholder="Enter Hierarchy" class="input-field" readonly>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="joinDate">Join Date:</label>
+                        <input type="date" id="joinDate" class="input-field" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
